@@ -1,0 +1,23 @@
+package newone;
+
+import java.util.Scanner;
+
+public class Reverse {
+
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Your Value =");
+		int t = sc.nextInt();
+		int i,j,k=0;
+		while (t>0) {
+			i=t%10;
+			k=k*10+i;
+			t=t/10;
+		}
+		System.out.println(k);	
+	}
+	
+}
+
